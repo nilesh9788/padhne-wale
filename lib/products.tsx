@@ -294,6 +294,7 @@ export function Nav({ onProducts }: { onProducts?: () => void }) {
 
       <nav className="nav-links">
         <a href="/about">About Us</a>
+        <a href="/products">Products</a>
       </nav>
 
       <a
@@ -320,7 +321,7 @@ export function Footer() {
       </div>
 
       <div className="footer-links">
-        <a href="/#collection">Products</a>
+        <a href="/products">Products</a>
         <a href="/about">About</a>
         <a
           href={purchaseUrl}
