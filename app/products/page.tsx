@@ -11,7 +11,7 @@ const products = [
   {
     number: '01',
     name: 'Formula Playing Cards',
-    category: 'PHYSICS',
+    category: 'Playing Cards',
     description:
       'A deck of playing cards turned into a pocket-sized revision system. Learn formulas, concepts and questions while you play.',
     inside: '52 educational playing cards',
@@ -20,7 +20,7 @@ const products = [
     price: '₹399',
     originalPrice: '₹499',
     discount: '20% OFF',
-    image: '/products/formula-playing-cards.png',
+    image: '/products/playing-card.png',
     orderUrl: 'https://forms.google.com/',
     accent: 'lime',
   },
@@ -28,7 +28,7 @@ const products = [
   {
     number: '02',
     name: 'Poker Chips',
-    category: 'CHEMISTRY',
+    category: 'Poker Chips',
     description:
       'Chemistry concepts packed into poker chips. A tactile way to remember constants, scientists, discoveries and the stuff you usually cram.',
     inside: 'Educational chemistry poker chips',
@@ -37,7 +37,7 @@ const products = [
     price: '₹499',
     originalPrice: '₹599',
     discount: '17% OFF',
-    image: '/products/poker-chips.png',
+    image: '/products/poker-coin.png',
     orderUrl: 'https://forms.google.com/',
     accent: 'coral',
   },
@@ -45,7 +45,7 @@ const products = [
   {
     number: '03',
     name: 'Concept Jenga',
-    category: 'MULTI-SUBJECT',
+    category: 'Jenga',
     description:
       'The classic tower game, rebuilt for revision. Pull a block, answer a question, remember a concept and try not to bring the whole syllabus down.',
     inside: 'Question, formula and challenge blocks',
@@ -54,7 +54,7 @@ const products = [
     price: '₹699',
     originalPrice: '₹799',
     discount: '13% OFF',
-    image: '/products/concept-jenga.png',
+    image: '/products/jenga.png',
     orderUrl: 'https://forms.google.com/',
     accent: 'blue',
   },
@@ -62,7 +62,7 @@ const products = [
   {
     number: '04',
     name: 'Tell or Solve',
-    category: 'MULTI-SUBJECT',
+    category: 'Tell or Solve',
     description:
       'One deck. Two ways to play. Tell the answer or solve the problem — designed for quick revision, group study and competitive learning.',
     inside: 'Tell cards + Solve cards',
@@ -71,15 +71,15 @@ const products = [
     price: '₹349',
     originalPrice: '₹399',
     discount: '13% OFF',
-    image: '/products/tell-or-solve.png',
+    image: '/products/poker-coin.png',
     orderUrl: 'https://forms.google.com/',
     accent: 'yellow',
   },
 
   {
     number: '05',
-    name: 'Cram Pack',
-    category: 'MULTI-SUBJECT',
+    name: 'Tissue Paper',
+    category: 'Tissue Paper',
     description:
       'The last-minute revision pack for the moments when there is more syllabus than time. Compact, focused and built for quick recall.',
     inside: 'Chapter-wise revision cards',
@@ -88,7 +88,7 @@ const products = [
     price: '₹299',
     originalPrice: '₹349',
     discount: '14% OFF',
-    image: '/products/cram-pack.png',
+    image: '/products/tissue-paper.png',
     orderUrl: 'https://forms.google.com/',
     accent: 'pink',
   },
@@ -96,7 +96,7 @@ const products = [
   {
     number: '06',
     name: 'Matchbox Formulas',
-    category: 'MULTI-SUBJECT',
+    category: 'Monopoly',
     description:
       'Tiny packaging. Big formulas. A matchbox-sized revision object made to live in your pocket, bag, desk or literally anywhere you study.',
     inside: 'Formula strips',
@@ -105,7 +105,7 @@ const products = [
     price: '₹199',
     originalPrice: '₹249',
     discount: '20% OFF',
-    image: '/products/matchbox-formulas.png',
+    image: '/products/monopoly.png',
     orderUrl: 'https://forms.google.com/',
     accent: 'orange',
   },
@@ -113,7 +113,7 @@ const products = [
   {
     number: '07',
     name: 'Tissue Paper',
-    category: 'MULTI-SUBJECT',
+    category: 'Tissue Paper',
     description:
       'Study material hiding in plain sight. A deliberately unexpected format for notes, formulas and quick revision.',
     inside: 'Printed revision sheets',
@@ -130,7 +130,7 @@ const products = [
   {
     number: '08',
     name: 'Cheat Notes',
-    category: 'MULTI-SUBJECT',
+    category: 'Cigarette Pack Cheat Notes',
     description:
       'Small notes for big syllabus. Condensed formulas, concepts and reminders designed for the final glance before you need them.',
     inside: 'Condensed revision notes',
@@ -139,7 +139,7 @@ const products = [
     price: '₹249',
     originalPrice: '₹299',
     discount: '17% OFF',
-    image: '/products/cheat-notes.png',
+    image: '/products/Cigarette.png',
     orderUrl: 'https://forms.google.com/',
     accent: 'coral',
   },

@@ -12,6 +12,7 @@ export type Product = {
   color: string
   type: 'cards' | 'chips' | 'jenga' | 'tell' | 'pack' | 'matchbox'
   features: string[]
+  image: string
 }
 
 export const products: Product[] = [
@@ -25,6 +26,7 @@ export const products: Product[] = [
       '52 cards. 52 things worth remembering. Chaar worlds of knowledge, shuffled into your pocket — full jugaad for revision.',
     color: 'lime',
     type: 'cards',
+    image: '/products/playing-card.png',
     features: [
       '52 educational cards',
       '4 subject categories',
@@ -42,6 +44,7 @@ export const products: Product[] = [
       'Scientists, constants and discoveries — stacked into a tactile set you will want to keep on your desk.',
     color: 'coral',
     type: 'chips',
+    image: '/products/poker-coin.png',
     features: [
       'Scientists & discoveries',
       'Chemistry constants',
@@ -59,6 +62,7 @@ export const products: Product[] = [
       'Every block is a question, a formula or a challenge. Pull one out. Put an idea in.',
     color: 'blue',
     type: 'jenga',
+    image: '/products/jenga.png',
     features: [
       'Question blocks',
       'Formula blocks',
@@ -69,13 +73,14 @@ export const products: Product[] = [
   {
     id: 'tell-or-solve',
     index: '04',
-    name: 'Tell or Solve',
+    name: 'Tissue Paper',
     eyebrow: 'Truth or dare, re-written',
     title: 'Make studying a group activity.',
     description:
       'Tell a fact, solve a problem, challenge a friend. The fastest way to learn is to make it social.',
     color: 'yellow',
     type: 'tell',
+    image: '/products/tissue-paper.png',
     features: [
       'Tell cards',
       'Solve cards',
@@ -86,13 +91,14 @@ export const products: Product[] = [
   {
     id: 'cram-pack',
     index: '05',
-    name: 'Cram Pack',
+    name: 'Monopoly',
     eyebrow: 'For the exam tomorrow',
     title: 'Pocket-sized panic management.',
     description:
       'A tiny revision pack for the five minutes before class, the bus ride, or the night before.',
     color: 'pink',
     type: 'pack',
+    image: '/products/monopoly.png',
     features: [
       'Pocket-sized',
       'Chapter-specific',
@@ -103,13 +109,32 @@ export const products: Product[] = [
   {
     id: 'matchbox-formulas',
     index: '06',
-    name: 'Matchbox Formulas',
+    name: 'UNO No Mercy Card',
     eyebrow: 'Tiny box, big recall',
     title: 'Light up a formula.',
     description:
       'Pull a strip. Read a formula. Put it somewhere your brain can find it later.',
     color: 'orange',
     type: 'matchbox',
+    image: '/products/uno.png',
+    features: [
+      'Formula strips',
+      'Tiny packaging',
+      'Carry anywhere',
+      'Instant recall',
+    ],
+  },
+  {
+    id: 'cigarette box',
+    index: '06',
+    name: 'Cigarette Box formula book',
+    eyebrow: 'Tiny box, big recall',
+    title: 'Light up a formula.',
+    description:
+      'Pull a strip. Read a formula. Put it somewhere your brain can find it later.',
+    color: 'orange',
+    type: 'matchbox',
+    image: '/products/Cigarette.png',
     features: [
       'Formula strips',
       'Tiny packaging',
@@ -191,8 +216,17 @@ export function ProductVisual({
   small?: boolean
 }) {
   return (
-    <div className={`visual visual-${product.color}`}>
-      <ProductObject type={product.type} small={small} />
+    <div
+      className={`visual visual-${product.color} ${
+        small ? 'visual-small' : ''
+      }`}
+    >
+      <img
+        src={product.image}
+        alt={product.name}
+        className="product-image"
+        draggable={false}
+      />
     </div>
   )
 }
