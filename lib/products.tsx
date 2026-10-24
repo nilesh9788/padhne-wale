@@ -329,6 +329,8 @@ export function Nav({ onProducts }: { onProducts?: () => void }) {
       <nav className="nav-links">
         <a href="/about">About Us</a>
         <a href="/products">Products</a>
+        <a href="/everywhere">PW Everywhere</a>
+        <a href="/pr">Investor Relations</a>
       </nav>
 
       <a
